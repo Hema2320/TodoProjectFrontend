@@ -5,8 +5,6 @@ import { ALL_TODOS, DONE_TODOS, ACTIVE_TODOS } from '../redux/actions/type';
 
 import { useDispatch, useSelector } from 'react-redux';
 
-
-// component
 import Todo from './Todo';
 import Tabs from './Tabs';
 
@@ -30,6 +28,9 @@ export const Todos = () => {
         } else if (currentTab === DONE_TODOS) {
             return todos.filter(todo => todo.done)
         }
+        //  else if (currentTab === ADD_NEW_TODOS){
+        //       navigate("/todoform")
+        //  }
     }
 
     const removeDoneTodos = () => {

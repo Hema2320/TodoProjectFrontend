@@ -51,6 +51,7 @@ const Todo = ({ todo }) => {
                 <i className="fas fa-pen" />
             </span>
         </li>
+        
     )
 }
 
